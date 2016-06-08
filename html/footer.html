@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- 底部版权 开始-->
+<div id="copyright_main">
+    <div id="copyright"><span><a href="http://www.xx.com/" target="_self">某某灯具</a>&nbsp;版权所有&nbsp;2013-2018&nbsp;ICP备888888888号&nbsp;</span>
+    </div>
+</div><!--返回顶部start-->
+<script type="text/javascript" src="../resources/js/global/scroll.js"></script>
+<script>
+    scrolltotop.controlattrs = {offsetx: 20, offsety: 150};
+    scrolltotop.controlHTML = '<img src="../resources/images/global/5.gif" />';
+    scrolltotop.anchorkeyword = '#gotop';
+    scrolltotop.title = '回顶部';
+    scrolltotop.init();
+</script><!--返回顶部end-->
+<!--在线客服start-->
+<link rel="stylesheet" type="text/css" href="../resources/css/global/green.css">
+<script type="text/javascript" src="../resources/js/global/jquery.online.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $().Sonline({
+            Position: 'left',
+            Top: 180,
+            Width: 160,
+            Style: 1,
+            Effect: true,
+            DefaultsOpen: true,
+            Tel: '1',
+            Title: '在线客服',
+            FooterText: "<img alt='微信扫一扫 关注我们' src='../resources/images/global/qrcode.jpg' style='width: 130px; height: 130px;margin-top:8px;' title='微信扫一扫 关注微信公众号'/>",
+            Website: '',
+            Qqlist: '123456|业务咨询|6'
+        });
+    })
+</script>
+<!-- 底部版权 结束-->
+<div id="topcontrol" title="回顶部" style="position: fixed; bottom: 150px; right: 20px; opacity: 1; cursor: pointer;"><img
+        src="../resources/images/global/5.gif"></div>
 
 </body>
 </html>
