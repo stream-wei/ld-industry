@@ -1,0 +1,82 @@
+#footer {
+    margin-top: 10px;
+    background: #666;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#footer .f-nav {
+    float: left;
+    margin-top: 20px;
+    width: 801px;
+}
+
+#footer .f-nav dl {
+    float: left;
+    width: 200px;
+}
+
+#footer .f-nav dl dt {
+    color: #eee;
+    font-size: 16px;
+    height: 30px;
+}
+
+#footer .f-nav dl dd a {
+    color: #eee;
+}
+
+#footer .f-link {
+    float: right;
+    width: 300px;
+    margin-top: 20px;
+}
+
+#footer .f-link .ewm {
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+#footer .f-link dl {
+    float: right;
+    width: 160px;
+    height: 120px;
+    text-align: center;
+}
+
+#footer .f-link dl dt {
+    display: block;
+    color: #eee;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+#footer .f-link dl dd {
+    width: 160px;
+}
+
+#footer .f-link dl dd a {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    color: #eee;
+    margin-top: 10px;
+}
+
+#footer .f-copy {
+    text-align: center;
+    border-top: #eee solid 1px;
+    color: #eee;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+#footer .f-copy a {
+    color: #eee;
+    text-decoration: underline;
+    margin-left: 10px;
+}

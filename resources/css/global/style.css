@@ -460,7 +460,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #floor_1 .ChannelSContent1 img {
     float: left;
-    margin: 0 0 0 10px;
+    margin: 67px 0 0 10px;
     width: 109px;
     height: 120px;
 }
@@ -476,7 +476,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #floor_2_main {
-    background: url(../../images/index/floor_2_main.jpg) no-repeat top center;
+    /*background: url(../../images/index/floor_2_main.jpg) no-repeat top center;*/
+    background-color: silver;
     height: 607px;
 }
 
@@ -547,7 +548,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 /*主体左侧样式*/
 .left_title {
-    height: 130px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    /*height: 130px;*/
     text-align: center;
 }
 
@@ -581,6 +584,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .left_bottom .ViewDetail {
     display: block;
     margin: 30px auto;
+    /*margin-top: 25px;;*/
     width: 125px;
     height: 36px;
     line-height: 36px;
@@ -588,6 +592,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     text-align: center;
     color: #1C894D;
     font-size: 16px;
+    /*font-weight: bold;*/
 }
 
 .left_bottom .ViewDetail:hover {
