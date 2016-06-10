@@ -455,7 +455,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #floor_1 {
-    background: url(../../images/index/floor_1.png) no-repeat left top;
+    /*background: url(../../images/index/floor_1.png) no-repeat left top;*/
 }
 
 #floor_1 .ChannelSContent1 img {
@@ -476,9 +476,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #floor_2_main {
-    /*background: url(../../images/index/floor_2_main.jpg) no-repeat top center;*/
+    background: url(../../images/index/floor_4_main_1.jpg) no-repeat top center;
     background-color: silver;
-    height: 607px;
+    height: 370px;
 }
 
 #floor_2 {
@@ -503,8 +503,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #floor_4_main {
+    margin-top: -70px;
     background: url(../../images/index/floor_4_main.jpg) no-repeat top center;
-    height: 607px;
+    height: 408px;
 }
 
 #floor_4 {
@@ -569,6 +570,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .left_title .h2_2 a:hover {
     color: #11A252;
+    color: #B9F5AD;
 }
 
 .left_title .h2_2 {
@@ -603,11 +605,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 /*样式1*/
 .left_title1 {
     height: 115px;
-    background: url(../../images/index/left_title1.png) no-repeat center top;
+    /*background: url(../../images/index/left_title1.png) no-repeat center top;*/
 }
 
 .left_title1 h2 a {
-    color: #FFF;
+    color: #14743F;
     font-size: 22px;
 }
 
@@ -628,7 +630,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .left_bottom1 {
     height: 55px;
-    margin: 20px 0 0;
+    /*margin: 20px 0 0;*/
 }
 
 .left_bottom1 .ChannelName {
@@ -717,7 +719,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .left_title4 {
     height: 115px;
-    background: url(../../images/index/left_title1.png) no-repeat center top;
+    /*background: url(../../images/index/left_title1.png) no-repeat center top;*/
 }
 
 .left_title4 h2 a {
@@ -2126,6 +2128,7 @@ table.feedback_table .operation {
 }
 
 .gridlist li .InfoSTitle {
+    font-size: 30px;
     white-space: nowrap;
     line-height: 140%;
     text-indent: 7px;
@@ -2245,7 +2248,7 @@ table.feedback_table .operation {
 /*橱窗列表2*/
 .gridlist2 {
     overflow: hidden;
-    margin: 103px 0 0;
+    margin: 20px 0 0;
 }
 
 .gridlist2 li {
