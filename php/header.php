@@ -20,8 +20,8 @@
         <div id="top_2">
             <div id="navigation">
                 <ul class="navigationlist">
-                    <li><a href="index.html" target="_self" class="current">首页</a><!----></li>
-                    <li><a href="abautUs.html" target="_self">关于我们</a>
+                    <li><a href="index.php" target="_self" class="current">首页</a><!----></li>
+                    <li><a href="about.php" target="_self">关于我们</a>
                         <ul class="subnavigationlist">
                             <li><a href="/culture.html" target="_self">企业文化</a></li>
                             <li><a href="/honor.html" target="_self">资质荣誉</a></li>
