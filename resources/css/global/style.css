@@ -873,7 +873,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #top_main {
-    background: url(../../images/index/top_main.png);
+    /*background: url(../../images/index/top_main.png);*/
+    background: url(../../images/index/header-bg.png) repeat;
     position: fixed;
     top: 0;
     width: 100%;
@@ -881,7 +882,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #top {
-    height: 120px;
+    /*height: 120px;*/
+    height: 90px;
 }
 
 #top_2 {
@@ -948,18 +950,22 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #navigation ul.navigationlist li a {
-    line-height: 150px;
+    /*line-height: 150px;*/
+    line-height: 120px;
     display: block;
-    width: 124px;
-    color: #FFF;
-    background: url(../../images/index/navigationlist_li.png) top center;
+    width: 160px;
+    /*color: #FFF;*/
+    color:#085a93;
+    font-weight: bold;
+    font-size:20px;
+    /*background: url(../../images/index/navigationlist_li.png) top center;*/
 }
 
 #navigation ul.navigationlist li a:hover {
     text-decoration: none;
     background: url(../../images/index/navigation_li.jpg) top;
     color: #FFF;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #navigation ul.navigationlist .current {

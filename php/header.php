@@ -15,29 +15,28 @@
     <div id="top">
         <div id="logo"><!--网站Logo 开始-->
             <div class="WebLogo">
-                <a href="#" target="_self"><img src="../resources/images/global/logo.png" title="某某公司" alt="某某公司"></a>
+                <a href="#" target="_self">
+                    <img style="margin-top: 10px;" src="../resources/images/global/logo.png" title="某某公司" alt="某某公司">
+                </a>
             </div><!--网站Logo 结束--></div>
         <div id="top_2">
             <div id="navigation">
                 <ul class="navigationlist">
-                    <li><a href="index.php" target="_self" class="current">首页</a><!----></li>
-                    <li><a href="about.php" target="_self">关于我们</a>
-                        <ul class="subnavigationlist">
+                    <li><a href="index.php" target="_self" >Home</a><!----></li>
+                    <li><a href="about.php" target="_self">About us</a>
+                        <!--<ul class="subnavigationlist">
                             <li><a href="/culture.html" target="_self">企业文化</a></li>
                             <li><a href="/honor.html" target="_self">资质荣誉</a></li>
                             <li><a href="/video.html" target="_self">宣传视频</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
-                    <li><a href="#" target="_self">新闻资讯</a>
+                    <li><a href="#" target="_self">Products</a>
                         <!--<ul class="subnavigationlist"><li><a href="/companynews.html" target="_self">公司新闻</a></li><li><a href="/industrytrends.html" target="_self">行业动态</a></li></ul>-->
                     </li>
-                    <li><a href="#" target="_self">产品中心</a>
+                    <li><a href="#" target="_self">Service</a>
                         <!--<ul class="subnavigationlist"><li><a href="/snzm.html" target="_self">室内照明</a></li><li><a href="/dgcp.html" target="_self">电工产品</a></li><li><a href="/gyzm.html" target="_self">光源照明</a></li><li><a href="/hwzm.html" target="_self">户外照明</a></li><li><a href="/zycp.html" target="_self">专业产品</a></li><li><a href="/jcdd.html" target="_self">集成吊顶</a></li></ul>-->
                     </li>
-                    <li><a href="#" target="_self">工程案例</a><!----></li>
-                    <li><a href="#" target="_self">人才招聘</a><!----></li>
-                    <li><a href="#" target="_self">在线留言</a><!----></li>
-                    <li><a href="#" target="_self">联系我们</a><!----></li>
+                    <li><a href="#" target="_self">Contact Us</a><!----></li>
                 </ul>
             </div>
         </div>
@@ -47,8 +46,8 @@
 <div id="banner_main"><!--幻灯片 开始-->
     <div id="banner">
         <ul class="bannerlist">
-            <li><img src="../resources/images/global/1.jpg"></li>
-            <li><img src="../resources/images/global/2.jpg"></li>
+            <li><img style="width: 100%;" src="../resources/images/global/index_1.jpg"></li>
+            <li><img style="width: 100%;" src="../resources/images/global/index_2.jpg"></li>
         </ul>
     </div>
     <div class="hd">
