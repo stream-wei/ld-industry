@@ -1,5 +1,5 @@
 <?php
-include_once 'header.php';
+include_once 'header_s.php';
 ?>
 <link rel="stylesheet" type="text/css" href="../resources/css/about/basecss.css">
 <link rel="stylesheet" type="text/css" href="../resources/css/about/index.css">
@@ -7,6 +7,9 @@ include_once 'header.php';
 <section>
     <div class="content">
         <div class="contentIn clearfix">
+            <div class="position"> <a href="/index.html" rel="nofollow">Home</a>
+                » <a href="/about-2.html" rel="nofollow">About</a>
+            </div>
             <!--右边开始-->
             <div class="caseList">
                 <div class="sub_right_tit">About</div>

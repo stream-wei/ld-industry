@@ -8,7 +8,7 @@
 .bannerBox{ width: 100%; height: auto; overflow: hidden; position: relative;}
 .bannerBox img{ width: 100%; height: auto;}
 
-.position{ width: 905px; height: 42px; background: #f1f1f1 url(../../images/about/position.jpg) no-repeat; padding-left: 45px; margin: 78px 0 30px;}
+.position{ width: 905px; height: 42px; background: #f1f1f1 url(../../images/global/home.png) no-repeat; padding-left: 45px; margin: 78px 0 30px;}
 .position a{ color: #333; line-height: 42px; font-size: 14px;}
 .position a:hover{ text-decoration: underline;}
 
