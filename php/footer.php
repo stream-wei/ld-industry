@@ -63,24 +63,24 @@
     scrolltotop.init();
 </script><!--返回顶部end-->
 <!--在线客服start-->
-<link rel="stylesheet" type="text/css" href="../resources/css/global/green.css">
-<script type="text/javascript" src="../resources/js/global/jquery.online.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="../resources/css/global/green.css">-->
+<!--<script type="text/javascript" src="../resources/js/global/jquery.online.js"></script>-->
 <script type="text/javascript">
-    $(function () {
-        $().Sonline({
-            Position: 'left',
-            Top: 180,
-            Width: 160,
-            Style: 1,
-            Effect: true,
-            DefaultsOpen: true,
-            Tel: '1',
-            Title: '在线客服',
-            FooterText: "<img alt='微信扫一扫 关注我们' src='../resources/images/global/qrcode.jpg' style='width: 130px; height: 130px;margin-top:8px;' title='微信扫一扫 关注微信公众号'/>",
-            Website: '',
-            Qqlist: '123456|业务咨询|6'
-        });
-    })
+//    $(function () {
+//        $().Sonline({
+//            Position: 'left',
+//            Top: 180,
+//            Width: 160,
+//            Style: 1,
+//            Effect: true,
+//            DefaultsOpen: true,
+//            Tel: '1',
+//            Title: '在线客服',
+//            FooterText: "<img alt='微信扫一扫 关注我们' src='../resources/images/global/qrcode.jpg' style='width: 130px; height: 130px;margin-top:8px;' title='微信扫一扫 关注微信公众号'/>",
+//            Website: '',
+//            Qqlist: '123456|业务咨询|6'
+//        });
+//    })
 </script>
 <!-- 底部版权 结束-->
 <div id="topcontrol" title="回顶部" style="position: fixed; bottom: 150px; right: 20px; opacity: 1; cursor: pointer;">

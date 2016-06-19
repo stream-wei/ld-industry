@@ -28,17 +28,6 @@ include_once 'header_s.php';
 
                     </ul>
                 </div>
-                <!--<div class="newlist">
-                    <h3>News</h3>
-                    <ul>
-                        <li><a href="http://www.sakysteel.com/stainless-steel--grade-189.html">stainless steel 303 grade...</a></li>
-                        <li><a href="http://www.sakysteel.com/alloy-steel-188.html">Alloy Steel</a></li>
-                        <li><a href="http://www.sakysteel.com/what-is-the-character-and-application-of--stainless-steel-190.html">What is the character and app...</a></li>
-                        <li><a href="http://www.sakysteel.com/what-is-the-character-and-application-of--stainless-steel-191.html">What is the character and app...</a></li>
-                        <li><a href="http://www.sakysteel.com/stainless-steel-sheet-manufacturer-194.html">stainless steel sheet manufact...</a></li>
-
-                    </ul>
-                </div>-->
                 <div class="cert">
                     <h3>OUR CERTIFICATION</h3>
                     <ul class="clearfix">

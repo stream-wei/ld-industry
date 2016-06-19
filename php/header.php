@@ -30,13 +30,11 @@
                             <li><a href="/video.html" target="_self">宣传视频</a></li>
                         </ul>-->
                     </li>
-                    <li><a href="#" target="_self">Products</a>
-                        <!--<ul class="subnavigationlist"><li><a href="/companynews.html" target="_self">公司新闻</a></li><li><a href="/industrytrends.html" target="_self">行业动态</a></li></ul>-->
+                    <li><a href="products.php" target="_self">Products</a>
                     </li>
                     <li><a href="#" target="_self">Service</a>
-                        <!--<ul class="subnavigationlist"><li><a href="/snzm.html" target="_self">室内照明</a></li><li><a href="/dgcp.html" target="_self">电工产品</a></li><li><a href="/gyzm.html" target="_self">光源照明</a></li><li><a href="/hwzm.html" target="_self">户外照明</a></li><li><a href="/zycp.html" target="_self">专业产品</a></li><li><a href="/jcdd.html" target="_self">集成吊顶</a></li></ul>-->
                     </li>
-                    <li><a href="#" target="_self">Contact Us</a><!----></li>
+                    <li><a href="about.php" target="_self">Contact Us</a><!----></li>
                 </ul>
             </div>
         </div>

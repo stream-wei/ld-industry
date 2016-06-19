@@ -30,7 +30,7 @@
                             <li><a href="/video.html" target="_self">宣传视频</a></li>
                         </ul>-->
                     </li>
-                    <li><a href="#" target="_self">Products</a>
+                    <li><a href="products.php" target="_self">Products</a>
                         <!--<ul class="subnavigationlist"><li><a href="/companynews.html" target="_self">公司新闻</a></li><li><a href="/industrytrends.html" target="_self">行业动态</a></li></ul>-->
                     </li>
                     <li><a href="#" target="_self">Service</a>
