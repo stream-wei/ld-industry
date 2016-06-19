@@ -1,4 +1,4 @@
-<?php include_once '../php/header.php';?>
+<?php include_once '../php/header_s.php';?>
 <link rel="stylesheet" type="text/css" href="../resources/css/products/basecss.css">
 <link rel="stylesheet" type="text/css" href="../resources/css/products/index.css">
 <link rel="stylesheet" type="text/css" href="../resources/css/products/style.css">
@@ -20,7 +20,7 @@ if(isset($_GET['category'])){
     $category = null;
 }
 $pageSize = 9;
-$mysqli = new mysqli('localhost', 'root', '123456', 'INDUSTRY');
+$mysqli = new mysqli('192.168.1.88', 'root', '123456', 'INDUSTRY');
 if (mysqli_connect_errno()) {
     printf("连接失败:%s\n", mysqli_connect_error());
     exit();
@@ -53,8 +53,10 @@ $total = $countResult->fetch_row()[0];
 ?>
 
 <section>
-    <div class="bannerBox"></div>
     <div class="content">
+        <div class="position"> <a href="/index.html" rel="nofollow">Home</a>
+            » <a href="/about-2.html" rel="nofollow">Products</a>
+        </div>
         <div class="contentIn clearfix">
             <!--左边开始-->
             <div class="caseList">
@@ -181,13 +183,6 @@ $total = $countResult->fetch_row()[0];
 
 <ul>
 <?php
-$startPage = ($currPage - 1)*$pageSize;
-$result = $mysqli->query("SELECT * FROM product limit $startPage,$pageSize");
-
-while (list($product_name,$url) = $result->fetch_row()){
-//    echo $product_name.'<br/>'.'<img src="../upload/1.jpg" />';
-}
-
 $mysqli->close();
 ?>
 </ul>

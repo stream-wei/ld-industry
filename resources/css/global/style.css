@@ -429,7 +429,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #top, #banner, #announcement, #link, #copyright, #floor_1, #floor_2, #floor_3, #floor_4, #floor_5 {
-    width: 1200px;
+    width: 960px;
     margin: 0 auto;
     overflow: hidden;
     border: 0px dashed red;
@@ -953,11 +953,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     /*line-height: 150px;*/
     line-height: 120px;
     display: block;
-    width: 160px;
+    width: 130px;
     /*color: #FFF;*/
     color:#085a93;
     font-weight: bold;
-    font-size:20px;
+    font-size:16px;
     /*background: url(../../images/index/navigationlist_li.png) top center;*/
 }
 
@@ -965,7 +965,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     text-decoration: none;
     background: url(../../images/index/navigation_li.jpg) top;
     color: #FFF;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #navigation ul.navigationlist .current {
