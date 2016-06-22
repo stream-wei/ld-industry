@@ -494,12 +494,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #floor_3_1 {
     float: left;
-    width: 570px;
+    width: 450px;
 }
 
 #floor_3_2 {
     float: right;
-    width: 570px;
+    width: 450px;
 }
 
 #floor_4_main {
@@ -604,12 +604,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 /*样式1*/
 .left_title1 {
+    text-align: left;
     height: 115px;
     /*background: url(../../images/index/left_title1.png) no-repeat center top;*/
 }
 
 .left_title1 h2 a {
-    color: #14743F;
+    color: black;
+    font-weight:inherit;
     font-size: 22px;
 }
 
@@ -655,7 +657,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     text-indent: 40px;
     height: 57px;
     line-height: 57px;
-    background: url(../../images/index/left_title2.jpg) no-repeat left center;
+    /*background: url(../../images/index/left_title2.jpg) no-repeat left center;*/
 }
 
 .left_title2 h2 a {
@@ -2265,7 +2267,7 @@ table.feedback_table .operation {
     display: inline /*解决ie6 双边距bug*/;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 184px;
+    width: 177px;
 }
 
 .gridlist2 li .img {
@@ -2281,7 +2283,6 @@ table.feedback_table .operation {
 .gridlist2 .li1 {
     margin: 0;
 }
-
 .gridlist2 li .img:hover {
     background: #FFF;
 }
