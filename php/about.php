@@ -23,7 +23,7 @@ include_once 'header_s.php';
                 <div class="sideLeft">
                     <h3>About Us</h3>
                     <ul>
-                        <li><a href="http://www.sakysteel.com/certificates-71.html">Certificates</a></li>
+                        <li><a href="certificates.php">Certificates</a></li>
                         <li><a href="http://www.sakysteel.com/team-4.html">Team</a></li>
 
                     </ul>

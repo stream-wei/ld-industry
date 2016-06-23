@@ -503,7 +503,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #floor_4_main {
-    margin-top: -70px;
+    margin-top: -50px;
     background: url(../../images/index/floor_4_main.jpg) no-repeat top center;
     height: 408px;
 }
@@ -564,13 +564,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .left_title .h2_2 a {
-    color: #14743F;
+    color: black;
     font-size: 22px;
 }
 
 .left_title .h2_2 a:hover {
-    color: #11A252;
-    color: #B9F5AD;
+    color: #085a93;
 }
 
 .left_title .h2_2 {
@@ -616,7 +615,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .left_title1 h2 a:hover {
-    color: #B9F5AD;
+    color: #085a93;
 }
 
 .left_title1 h2 {
@@ -653,20 +652,20 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .left_title2 h2 {
     font-size: 22px;
-    color: #14743F;
-    text-indent: 40px;
+    color: black;
+    /*text-indent: 40px;*/
     height: 57px;
     line-height: 57px;
     /*background: url(../../images/index/left_title2.jpg) no-repeat left center;*/
 }
 
 .left_title2 h2 a {
-    color: #14743F;
+    color: black;
     font-size: 22px;
 }
 
 .left_title2 h2 a:hover {
-    color: #11A252;
+    color: #085a93;
 }
 
 .left_title2 img {
@@ -721,16 +720,17 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .left_title4 {
     height: 115px;
+    text-align: left;
     /*background: url(../../images/index/left_title1.png) no-repeat center top;*/
 }
 
 .left_title4 h2 a {
-    color: #14743F;
+    color: black;
     font-size: 22px;
 }
 
 .left_title4 h2 a:hover {
-    color: #60CE4A;
+    color: #085a93;
 }
 
 .left_title4 h2 {
@@ -1066,6 +1066,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .bannerlist li img {
     margin: 0 auto;
     display: block;
+    height:500px;
 }
 
 #banner_main .hd {
@@ -2078,7 +2079,7 @@ table.feedback_table .operation {
 }
 
 .textlist1 li a:hover {
-    color: #2F9509;
+    color: #085a93;
 }
 
 .textlist1 li .Time {
@@ -2102,7 +2103,7 @@ table.feedback_table .operation {
 }
 
 .textlist1 li .ChannelName a:hover {
-    color: #434343;
+    color: #085a93;
 }
 
 /*带缩略图文字列表*/
@@ -2136,9 +2137,9 @@ table.feedback_table .operation {
 }
 
 .gridlist li .InfoSTitle {
-    font-size: 30px;
+    font-size: 16px;
     white-space: nowrap;
-    line-height: 140%;
+    line-height: 220%;
     text-indent: 7px;
     display: block;
     color: #5A5A5A;
@@ -2293,11 +2294,11 @@ table.feedback_table .operation {
     height: 40px;
     line-height: 40px;
     font-size: 16px;
-    color: #FFF;
+    color: black;
 }
 
 .gridlist2 li .ChannelName:hover {
-    color: #71D54C
+    color: #085a93;
 }
 
 .gridlist4 .hd {
@@ -2349,6 +2350,9 @@ table.feedback_table .operation {
     white-space: nowrap;
     line-height: 28px;
     font-size: 16px;
+}
+a:hover {
+    color: #085a93;
 }
 
 /*==========@@通用列表  结束@@==========*/
