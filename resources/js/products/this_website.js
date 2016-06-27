@@ -13,7 +13,7 @@ $(function(){
       $(this).children("div").stop().animate({"bottom":"-129px"},500);
    });
 
-   $('.sidemenu>ul>li').hover(function(){
+   $('.sidemenu>ul>li').click(function(){
         
         if( $(".erj",this).is(':hidden') ) {
           $('.sidemenu>ul>li').removeClass('active').find(".erj").slideUp();
@@ -21,7 +21,7 @@ $(function(){
         }
     });
 
-    $('.sidemenu .erj li').hover(function(){
+    $('.sidemenu .erj li').click(function(){
     	if( $("dl",this).is(':hidden') ) {
           $('.sidemenu .erj li').removeClass('active').find("dl").slideUp();
           $(this).toggleClass('active').find("dl").slideDown();

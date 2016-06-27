@@ -42,12 +42,6 @@ include_once 'header_s.php';
 
                     </ul>
                 </div>
-                <div class="cert">
-                    <h3>OUR CERTIFICATION</h3>
-                    <ul class="clearfix">
-
-                    </ul>
-                </div>
                 <div class="contactSide">
                     <h3>Contact Us</h3>
                     <ul>

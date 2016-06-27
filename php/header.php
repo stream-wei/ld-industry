@@ -34,7 +34,7 @@
                     </li>
                     <li><a href="#" target="_self">Service</a>
                     </li>
-                    <li><a href="about.php" target="_self">Contact Us</a><!----></li>
+                    <li><a href="contact.php" target="_self">Contact Us</a></li>
                 </ul>
             </div>
         </div>

@@ -132,11 +132,7 @@ $total = $countResult->fetch_row()[0];
                         $categoryParentResult = $mysqli->query($queryCategoryParentList);
                         while (list($categoryParentId, $categoryParentName) = $categoryParentResult->fetch_row()){
                         $categoryParentTemp = ($categoryParent == null || $categoryParent == '') ? 1 : $categoryParent;
-                        if ($categoryParentId == $categoryParentTemp) {
-                            echo '<li class="">';
-                        } else {
-                            echo '<li class="">';
-                        }
+                        echo '<li class="">';
                         ?>
                         <h5>
                             <a href="products.php?currPage=1&categoryParent=<?php echo "$categoryParentId"; ?>"><?php echo "$categoryParentName"; ?></a>
@@ -146,8 +142,6 @@ $total = $countResult->fetch_row()[0];
                         $categoryResult = $mysqli->query($queryCategoryList);
                         while (list($categoryId, $categoryName, $partenId) = $categoryResult->fetch_row()){
                         $categoryTemp = ($categoryParent == null || $categoryParent == '') ? 1 : $categoryParent;
-                        //                                echo $categoryTemp.'===========';
-                        //                                echo $categoryId.'---------';
                         if ($partenId == $categoryTemp) {
                             echo '<ul class="erj active" style="display: block;">';
                         } else {
@@ -163,13 +157,6 @@ $total = $countResult->fetch_row()[0];
                     </li>
                     <?php } ?>
 
-
-                    </ul>
-                </div>
-
-                <div class="cert">
-                    <h3>OUR CERTIFICATION</h3>
-                    <ul class="clearfix">
 
                     </ul>
                 </div>
