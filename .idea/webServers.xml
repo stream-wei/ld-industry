@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bd01ad45-2a06-44a9-8b29-cccc914e93ec" name="88" url="http://192.168.1.88:8080">
+        <fileTransfer anonymous="true" host="192.168.1.88" port="21" rootFolder="/var/ftp/pub/ld-industry">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
