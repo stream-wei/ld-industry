@@ -71,7 +71,15 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
                                 <ul>
                                     <li style="display:block;">
                                         <a href="#" class="highslide" onclick="return hs.expand(this)" target="_blank">
-                                            <img src="../upload/1.jpg" id="bigPic" alt="<?php echo $categoryName?>">
+                                            <?php
+                                            $queryImageSql = "SELECT i.URL,d.TITLE
+                                                    FROM product_detail d, product_image pi, image_info i
+                                                    WHERE d.ID = pi.PRODUCT_ID AND pi.IMAGE_ID = i.ID AND i.AVAILABLE = 1 AND d.ID = $id";
+                                            $imageList = $mysqli->query($queryImageSql);
+                                            $imageListArray = $imageList->fetch_row();
+                                            echo "<img src='/upload/$imageListArray[0]' id='bigPic' alt='$imageListArray[1]'>";
+                                            ?>
+
                                         </a>
                                     </li>
                                 </ul>
