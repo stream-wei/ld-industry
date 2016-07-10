@@ -9,18 +9,18 @@ if (isset($_GET['currPage'])) {
 } else {
     $currPage = 1;
 }
-if (isset($_GET['categoryParent'])) {
-    $categoryParent = $_GET['categoryParent'];
+if (isset($_GET['pId'])) {
+    $pId = $_GET['pId'];
 } else {
-    $categoryParent = null;
+    $pId = null;
 }
-if (isset($_GET['category'])) {
-    $category = $_GET['category'];
+if (isset($_GET['cId'])) {
+    $cId = $_GET['cId'];
 } else {
-    $category = null;
+    $cId = null;
 }
 $pageSize = 9;
-$mysqli = new mysqli('192.168.1.88', 'root', '123456', 'INDUSTRY');
+$mysqli = new mysqli('stream.gotoftp1.com', 'stream', '3183371911', 'stream');
 if (mysqli_connect_errno()) {
     printf("连接失败:%s\n", mysqli_connect_error());
     exit();
@@ -31,19 +31,22 @@ $queryList = "SELECT
   p.PRODUCT_NAME, 
   p.TITLE, 
   i.URL, 
-  i.IMAGE_DESC 
-FROM PRODUCT p, IMAGE_INFO i ";
-$queryCount = "SELECT count(p.PRODUCT_NAME) FROM PRODUCT p, IMAGE_INFO i ";
+  i.IMAGE_DESC ,
+  pd.ID, 
+  p.CATEGORY_PARENT_ID, 
+  p.CATEGORY_ID 
+FROM PRODUCT p, IMAGE_INFO i,PRODUCT_DETAIL pd ";
+$queryCount = "SELECT count(p.PRODUCT_NAME) FROM PRODUCT p, IMAGE_INFO i ,PRODUCT_DETAIL pd ";
 $querySql = '';
-if (($categoryParent != null && $categoryParent != '') || ($category != null && $category != '')) {
+if (($pId != null && $pId != '') || ($cId != null && $cId != '')) {
     $querySql = $querySql . ", PRODUCT_CATEGORY c ";
 }
-$querySql = $querySql . "WHERE p.IMAGE_ID = i.ID AND i.TYPE = 2 AND p.AVAILABLE = 1 AND i.AVAILABLE = 1 ";
-if ($categoryParent != null && $categoryParent != '') {
-    $querySql = $querySql . "AND p.CATEGORY_PARENT_ID = c.ID and c.AVAILABLE = 1 and p.CATEGORY_PARENT_ID=$categoryParent ";
+$querySql = $querySql . "WHERE p.IMAGE_ID = i.ID AND i.TYPE = 2 AND p.AVAILABLE = 1 AND i.AVAILABLE = 1 AND pd.PRODUCT_ID = p.ID ";
+if ($pId != null && $pId != '') {
+    $querySql = $querySql . "AND p.CATEGORY_PARENT_ID = c.ID and c.AVAILABLE = 1 and p.CATEGORY_PARENT_ID=$pId ";
 }
-if ($category != null && $category != '') {
-    $querySql = $querySql . "AND p.CATEGORY_ID = c.ID and c.AVAILABLE = 1 and p.CATEGORY_ID=$category ";
+if ($cId != null && $cId != '') {
+    $querySql = $querySql . "AND p.CATEGORY_ID = c.ID and c.AVAILABLE = 1 and p.CATEGORY_ID=$cId ";
 }
 $limitSql = " limit $startPage,$pageSize";
 //echo $queryList.$querySql.$limitSql;
@@ -64,9 +67,9 @@ $total = $countResult->fetch_row()[0];
                 <div class="sub_goods">
                     <ul class="clearfix">
                         <?php
-                        while (list($product_name, $title, $url, $image_desc) = $result->fetch_row()) {
+                        while (list($product_name, $title, $url, $image_desc,$dId,$pId,$cId) = $result->fetch_row()) {
                             ?>
-                            <li><a href="#" title="<?php echo $title; ?>"><img src="<?php echo $url; ?>"
+                            <li><a href="detail.php?id=<?php echo $dId;?>&pId=<?php echo $pId;?>&cId=<?php echo $cId;?>" title="<?php echo $title; ?>"><img src="<?php echo $url; ?>"
                                                                                alt="<?php echo $image_desc; ?>"></a>
                                 <p><a href="#" title="<?php echo $title; ?>"><?php echo $product_name; ?></a></p>
                             </li>
@@ -130,34 +133,27 @@ $total = $countResult->fetch_row()[0];
                         <?php
                         $queryCategoryParentList = 'SELECT c.ID AS id,c.CATEGORY_NAME AS name FROM PRODUCT_CATEGORY c WHERE c.PARENT_ID = 0 AND c.AVAILABLE = 1';
                         $categoryParentResult = $mysqli->query($queryCategoryParentList);
-                        while (list($categoryParentId, $categoryParentName) = $categoryParentResult->fetch_row()){
-                        $categoryParentTemp = ($categoryParent == null || $categoryParent == '') ? 1 : $categoryParent;
-                        echo '<li class="">';
-                        ?>
-                        <h5>
-                            <a href="products.php?currPage=1&categoryParent=<?php echo "$categoryParentId"; ?>"><?php echo "$categoryParentName"; ?></a>
-                        </h5>
-                        <?php
-                        $queryCategoryList = "SELECT c.ID AS id,c.CATEGORY_NAME AS name,c.PARENT_ID AS parentId FROM PRODUCT_CATEGORY c WHERE c.PARENT_ID = $categoryParentId AND c.AVAILABLE = 1";
-                        $categoryResult = $mysqli->query($queryCategoryList);
-                        while (list($categoryId, $categoryName, $partenId) = $categoryResult->fetch_row()){
-                        $categoryTemp = ($categoryParent == null || $categoryParent == '') ? 1 : $categoryParent;
-                        if ($partenId == $categoryTemp) {
-                            echo '<ul class="erj active" style="display: block;">';
-                        } else {
-                            echo '<ul class="erj" style="display: none;">';
+                        while (list($categoryParentId, $categoryParentName) = $categoryParentResult->fetch_row()) {
+                            $categoryParentTemp = ($pId == null || $pId == '') ? 1 : $pId;
+                            echo '<li class="">';
+                            echo "<h5><a href=\"products.php?currPage=1&pId=$categoryParentId\">$categoryParentName</a> </h5>";
+                            $queryCategoryList = "SELECT c.ID categoryId,d.ID id,c.PARENT_ID parentId,c.CATEGORY_NAME name 
+                                            FROM product_detail d,product p,product_category c 
+                                            WHERE d.PRODUCT_ID = p.ID AND p.CATEGORY_ID = c.ID AND c.PARENT_ID = $categoryParentId AND c.AVAILABLE = 1";
+                            $categoryResult = $mysqli->query($queryCategoryList);
+                            while (list($categoryId, $id, $partenId, $categoryName) = $categoryResult->fetch_row()) {
+                                $categoryTemp = ($pId == null || $pId == '') ? 1 : $pId;
+                                if ($partenId == $categoryTemp) {
+                                    echo '<ul class="erj" style="display: block;">';
+                                } else {
+                                    echo '<ul class="erj" style="display: none;">';
+                                }
+                                echo "<li><a href=\"detail.php?cId=$categoryId&id=$id&pId=$partenId\">$categoryName</a> </li>";
+                                echo "</ul>";
+                            }
+                            echo "</li>";
                         }
                         ?>
-                        <li>
-                            <a href="products.php?currPage=1&category=<?php echo "$categoryId"; ?>"><?php echo "$categoryName"; ?></a>
-                        </li>
-
-                    </ul>
-                    <?php } ?>
-                    </li>
-                    <?php } ?>
-
-
                     </ul>
                 </div>
                 <div class="contactSide">

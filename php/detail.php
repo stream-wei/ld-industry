@@ -4,17 +4,22 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/products/style.css">
 <link rel="stylesheet" type="text/css" href="../resources/css/products/media-queries.css">
 <?php
-if (isset($_GET['categoryParent'])) {
-    $categoryParent = $_GET['categoryParent'];
+if (isset($_GET['pId'])) {
+    $pId = $_GET['pId'];
 } else {
-    $categoryParent = null;
+    $pId = null;
+}
+if (isset($_GET['cId'])) {
+    $cId = $_GET['cId'];
+} else {
+    $cId = null;
 }
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 } else {
     $id = 1;
 }
-$mysqli = new mysqli('192.168.1.88', 'root', '123456', 'INDUSTRY');
+$mysqli = new mysqli('stream.gotoftp1.com', 'stream', '3183371911', 'stream');
 if (mysqli_connect_errno()) {
     printf("连接失败:%s\n", mysqli_connect_error());
     exit();
@@ -24,33 +29,27 @@ $queryDetail = 'SELECT
 	detail.DESCRIPTION AS description,
 	detail.DETAIL AS detail,
 	detail.TITLE AS title,
-	category.CATEGORY_NAME AS categoryName,
-	image.URL AS url
+	category.CATEGORY_NAME AS categoryName
 FROM
 	PRODUCT_DETAIL detail,
-	IMAGE_INFO image,
 	PRODUCT product,
 	PRODUCT_CATEGORY category
 WHERE
-	image.ID = detail.IMAGE_ID
-AND detail.PRODUCT_ID = product.ID
+ detail.PRODUCT_ID = product.ID
 AND product.CATEGORY_ID = category.ID
-AND image.AVAILABLE = 1
 AND category.AVAILABLE = 1 
-AND image.TYPE = 3 AND detail.PRODUCT_ID = '.$id;
+AND detail.ID = '.$id;
 $productDetail = $mysqli->query($queryDetail);
 $productId = '';
 $description = '';
 $detail = '';
 $title = '';
 $categoryName = '';
-$url = '';
-while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryNameTemp,$urlTemp) = $productDetail->fetch_row()){
+while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryNameTemp) = $productDetail->fetch_row()){
     $productId = $productIdTemp;
     $description = $descriptionTemp;
     $detail = $detailTemp;
     $title = $titleTemp;
-    $url = $urlTemp;
     $categoryName = $categoryNameTemp;
 }
 ?>
@@ -71,12 +70,34 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
                             <div class="bpic">
                                 <ul>
                                     <li style="display:block;">
-                                        <a href="<?php echo $url?>" class="highslide" onclick="return hs.expand(this)" target="_blank">
-                                            <img src="<?php echo $url?>" id="bigPic" alt="<?php echo $categoryName?>">
+                                        <a href="#" class="highslide" onclick="return hs.expand(this)" target="_blank">
+                                            <img src="../upload/1.jpg" id="bigPic" alt="<?php echo $categoryName?>">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
+                            <!--缩图开始-->
+                            <script type="text/javascript" src="../resources/js/jcarousel/lib/jquery.jcarousel.pack.js"></script>
+                            <link rel="stylesheet" type="text/css" href="../resources/js/jcarousel/skins/tango/skin.css" />
+                            <script type="text/javascript">
+                                jQuery(document).ready(function() {
+                                    jQuery('#mycarousel').jcarousel();
+                                });
+                                function showBigImg(img) {
+                                    $("#bigPic").attr('src',img.src.replace('small/',''));
+                                }
+                            </script>
+                            <ul id="mycarousel" class="jcarousel-skin-tango">
+                                <?php
+                                $queryImageSql = "SELECT i.URL,i.SMALL_URL 
+                                                    FROM product_detail d, product_image pi, image_info i
+                                                    WHERE d.ID = pi.PRODUCT_ID AND pi.IMAGE_ID = i.ID AND i.AVAILABLE = 1 AND d.ID = $id";
+                                $imageList = $mysqli->query($queryImageSql);
+                                while (list($url,$smallUrl) = $imageList->fetch_row()){
+                                    echo "<li><img src='/upload/small/$smallUrl' width='75' height='75' alt='' onclick='showBigImg(this)' /></li>";
+                                }
+                                ?>
+                            </ul>
                         </div>
                         <div class="pro_view_inner">
                             <h1><?php echo $title;?></h1>
@@ -89,7 +110,7 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
                                 <li><a href="http://www.sakysteel.com/stainless-steel-round-bar-53.html#inquiry"
                                        class="conNow">Contact Now</a></li>
                                 <li><!-- Go to www.addthis.com/dashboard to generate a new set of sharing buttons -->
-                                    <a href="https://api.addthis.com/oexchange/0.8/forward/pinterest/offer?url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
+                                   <!-- <a href="https://api.addthis.com/oexchange/0.8/forward/pinterest/offer?url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
                                        target="_blank"><img src="./detail_files/pinterest.png" border="0"
                                                             alt="Pinterest"></a>
                                     <a href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
@@ -104,7 +125,7 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
                                                             alt="Twitter"></a>
                                     <a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&amp;v=300&amp;url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
                                        target="_blank"><img src="./detail_files/addthis.png" border="0"
-                                                            alt="Addthis"></a>
+                                                            alt="Addthis"></a>-->
                                 </li>
                             </ul>
                         </div>
@@ -170,34 +191,27 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
                         <?php
                         $queryCategoryParentList = 'SELECT c.ID AS id,c.CATEGORY_NAME AS name FROM PRODUCT_CATEGORY c WHERE c.PARENT_ID = 0 AND c.AVAILABLE = 1';
                         $categoryParentResult = $mysqli->query($queryCategoryParentList);
-                        while (list($categoryParentId, $categoryParentName) = $categoryParentResult->fetch_row()){
-                        $categoryParentTemp = ($categoryParent == null || $categoryParent == '') ? 1 : $categoryParent;
-                        echo '<li class="">';
-                        ?>
-                        <h5>
-                            <a href="products.php?currPage=1&categoryParent=<?php echo "$categoryParentId"; ?>"><?php echo "$categoryParentName"; ?></a>
-                        </h5>
-                        <?php
-                        $queryCategoryList = "SELECT c.ID AS id,c.CATEGORY_NAME AS name,c.PARENT_ID AS parentId FROM PRODUCT_CATEGORY c WHERE c.PARENT_ID = $categoryParentId AND c.AVAILABLE = 1";
-                        $categoryResult = $mysqli->query($queryCategoryList);
-                        while (list($categoryId, $categoryName, $partenId) = $categoryResult->fetch_row()){
-                        $categoryTemp = ($categoryParent == null || $categoryParent == '') ? 1 : $categoryParent;
-                        if ($partenId == $categoryTemp) {
-                            echo '<ul class="erj active" style="display: block;">';
-                        } else {
-                            echo '<ul class="erj" style="display: none;">';
+                        while (list($categoryParentId, $categoryParentName) = $categoryParentResult->fetch_row()) {
+                            $categoryParentTemp = ($pId == null || $pId == '') ? 1 : $pId;
+                            echo '<li class="">';
+                            echo "<h5><a href=\"products.php?currPage=1&pId=$categoryParentId\">$categoryParentName</a> </h5>";
+                            $queryCategoryList = "SELECT c.ID categoryId,d.ID id,c.PARENT_ID parentId,c.CATEGORY_NAME name 
+                                            FROM product_detail d,product p,product_category c 
+                                            WHERE d.PRODUCT_ID = p.ID AND p.CATEGORY_ID = c.ID AND c.PARENT_ID = $categoryParentId AND c.AVAILABLE = 1";
+                            $categoryResult = $mysqli->query($queryCategoryList);
+                            while (list($categoryId, $id, $partenId, $categoryName) = $categoryResult->fetch_row()) {
+                                $categoryTemp = ($pId == null || $pId == '') ? 1 : $pId;
+                                if ($partenId == $categoryTemp) {
+                                    echo '<ul class="erj" style="display: block;">';
+                                } else {
+                                    echo '<ul class="erj" style="display: none;">';
+                                }
+                                echo "<li><a href=\"detail.php?cId=$categoryId&id=$id&pId=$partenId\">$categoryName</a> </li>";
+                                echo "</ul>";
+                            }
+                            echo "</li>";
                         }
                         ?>
-                        <li>
-                            <a href="products.php?currPage=1&category=<?php echo "$categoryId"; ?>"><?php echo "$categoryName"; ?></a>
-                        </li>
-
-                    </ul>
-                    <?php } ?>
-                    </li>
-                    <?php } ?>
-
-
                     </ul>
                 </div>
                 <div class="contactSide">
