@@ -67,13 +67,10 @@ $total = $countResult->fetch_row()[0];
                 <div class="sub_goods">
                     <ul class="clearfix">
                         <?php
-                        while (list($product_name, $title, $url, $image_desc,$dId,$pId,$cId) = $result->fetch_row()) {
-                            ?>
-                            <li><a href="detail.php?id=<?php echo $dId;?>&pId=<?php echo $pId;?>&cId=<?php echo $cId;?>" title="<?php echo $title; ?>"><img src="<?php echo $url; ?>"
-                                                                               alt="<?php echo $image_desc; ?>"></a>
-                                <p><a href="#" title="<?php echo $title; ?>"><?php echo $product_name; ?></a></p>
-                            </li>
-                            <?php
+                        while (list($product_name, $title, $url, $image_desc,$dId,$pIdTemp,$cIdTemp) = $result->fetch_row()) {
+                            echo "<li><a href='detail.php?id=$dId&cId=$cIdTemp&pId=$pIdTemp' title='$title'> <img src='$url' alt='$image_desc'/></a>";
+                            echo "<p><a href='#' title='$title'>$product_name</a></p>";
+                            echo "</li>";
                         }
                         ?>
                     </ul>
