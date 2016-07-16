@@ -18,21 +18,29 @@ $childOptions1 = '';
 $childOptions2 = '';
 $childOptions3 = '';
 $childOptions4 = '';
+$detail1 = '';
+$detail2 = '';
+$detail3 = '';
+$detail4 = '';
 $count = 1;
 while (list($pId, $pName) = $queryCategoryParent->fetch_row()) {
     $parentOptions .= "<option value='$count'>$pName</option>";
     $queryCategoryChild = $mysqli->query($queryCategoryChildSql . $pId);
     while (list($cId, $cName) = $queryCategoryChild->fetch_row()) {
         $queryDetailSql = "SELECT d.ID,p.PRODUCT_NAME FROM product p,product_detail d WHERE p.ID = d.PRODUCT_ID AND p.CATEGORY_ID = $cId";
-         $mysqli->query($queryDetailSql)->fetch_row();
+        $detail = $mysqli->query($queryDetailSql)->fetch_row();
         if ($count == 1) {
             $childOptions1 .= "<option value='$cId'>$cName</option>";
+            $detail1 .= "<option value='$detail[0]'>$detail[1]</option>";
         } else if ($count == 2) {
             $childOptions2 .= "<option value='$cId'>$cName</option>";
+            $detail2 .= "<option value='$detail[0]'>$detail[1]</option>";
         } else if ($count == 3) {
             $childOptions3 .= "<option value='$cId'>$cName</option>";
+            $detail3 .= "<option value='$detail[0]'>$detail[1]</option>";
         } else if ($count == 4) {
             $childOptions4 .= "<option value='$cId'>$cName</option>";
+            $detail4 .= "<option value='$detail[0]'>$detail[1]</option>";
         }
     }
     $count++;
@@ -42,29 +50,42 @@ echo "<script>
     var childOptions2 = \"$childOptions2\";
     var childOptions3 = \"$childOptions3\";
     var childOptions4 = \"$childOptions4\";
+    var detail1 = \"$detail1\";
+    var detail2 = \"$detail2\";
+    var detail3 = \"$detail3\";
+    var detail4 = \"$detail4\";
 </script>";
 ?>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script>
         function changeChild(value) {
-            if(value == 1){
+            if (value == 1) {
                 document.getElementById("cId").innerHTML = "";
                 document.getElementById("cId").innerHTML = childOptions1;
-            } else if(value == 2){
+//                document.getElementById("dId").innerHTML = "";
+//                document.getElementById("dId").innerHTML = detail1;
+            } else if (value == 2) {
                 document.getElementById("cId").innerHTML = "";
                 document.getElementById("cId").innerHTML = childOptions2;
-            } else if(value == 3){
+//                document.getElementById("dId").innerHTML = "";
+//                document.getElementById("dId").innerHTML = detail2;
+            } else if (value == 3) {
                 document.getElementById("cId").innerHTML = "";
                 document.getElementById("cId").innerHTML = childOptions3;
-            } else if(value == 4){
+//                document.getElementById("dId").innerHTML = "";
+//                document.getElementById("dId").innerHTML = detail3;
+            } else if (value == 4) {
                 document.getElementById("cId").innerHTML = "";
                 document.getElementById("cId").innerHTML = childOptions4;
+//                document.getElementById("dId").innerHTML = "";
+//                document.getElementById("dId").innerHTML = detail4;
             }
         }
     </script>
     <script type="text/javascript" charset="utf-8" src="../utf8-php/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../utf8-php/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../utf8-php/ueditor.all.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="../utf8-php/lang/zh-cn/zh-cn.js"></script>
     <script type="text/javascript">
         var ue = UE.getEditor('editor');
@@ -99,31 +120,30 @@ echo "<script>
         }
     </script>
     <script>
-        function hehe() {
+        function subForm() {
             var detailText = UE.getEditor('editor').getContent();
             document.getElementById("detail").value = detailText;
-            
+            document.getElementById("form").submit();
         }
     </script>
 </head>
 <body>
-<form id="form" action="insert.php">
-    <select name="pId" id="pId" onchange="changeChild(this.value);">
+<form id="form" action="insert.php" method="post">
+    parentCategory:<select name="pId" id="pId" onchange="changeChild(this.value);">
         <?php
         echo $parentOptions;
         ?>
-    </select><br/><br/><br/><br/><br/>
-    <select name="cId" id="cId">
+    </select><br/><br/>
+    childCategory:<select name="cId" id="cId">
         <?php
         echo $childOptions1;
         ?>
-    </select><br/><br/><br/><br/><br/>
-    <textarea name="description">
-        
-    </textarea><br/><br/><br/><br/><br/>
+    </select><br/><br/>
+
+    description:<textarea name="description"> </textarea><br/><br/>
     <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
-    <textarea name="detail" id="detail"></textarea>
-    <input type="button" onclick="hehe()" value="submit" />
+    <textarea name="detail" id="detail" style="display: none"></textarea>
+    <input type="button" onclick="subForm()" value="submit"/>
 </form>
 </body>
 </html>

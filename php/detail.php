@@ -53,7 +53,12 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
     $categoryName = $categoryNameTemp;
 }
 ?>
-
+<style>
+    .tabscon td{
+        padding:5px 10px;
+        border:1px solid #DDD;
+    }
+</style>
 <section>
     <div class="content">
         <div class="contentIn clearfix">
