@@ -22,7 +22,7 @@
         <div id="top_2">
             <div id="navigation">
                 <ul class="navigationlist">
-                    <li><a href="index.php" target="_self" >Home</a><!----></li>
+                    <li><a href="indexbak.php" target="_self" >Home</a><!----></li>
                     <li><a href="about.php" target="_self">About us</a>
                         <!--<ul class="subnavigationlist">
                             <li><a href="/culture.html" target="_self">企业文化</a></li>
@@ -32,7 +32,7 @@
                     </li>
                     <li><a href="products.php" target="_self">Products</a>
                     </li>
-                    <li><a href="#" target="_self">Service</a>
+                    <li><a href="service.php" target="_self">Service</a>
                     </li>
                     <li><a href="contact.php" target="_self">Contact Us</a></li>
                 </ul>

@@ -8,10 +8,14 @@ include_once '../php/header.php';
             <div class="left_body">
                 <div class="ChannelSContent1">
                     <a href="about.php" title="ABOUT US"><!--<img src="../resources/images/index/c1.jpg" alt="关于我们">--></a>
-                    <p>某某照明始于1996年，是一家集研发、生产和销售于一体的照明企业。历经18年的发展，公司现有员工6000 多人，拥有上海总部及工业园多个生产基地<br>公司产品涵盖LED及传统光源、灯具、电工电器、吊顶产品等领域。<br>
-                        历经18年的发展，公司现有员工6000 多人，拥有上海总部及中山工业园、吴江工业园等多个生产基地；
-                        对销售渠道建设，建立全国性的专卖店体系。<br>
-                        立足于照明市场特点及用户购买习惯，强大的营销队伍和完善的国内外营销网络。各类渠道终端销售网点超 过3000家。<br></p></div>
+                    <p>
+                        LEADER STEEL(sub-company of LEADER WATER INDUSTRY CO.,LTD) established in 1996, located in Shanghai, China.&nbsp;&nbsp;<br/>
+                        LEADER STEEL is a manufacturer specialized in production Stainless Steel Bars, Pipes, Wires, Coils, Sheets and Plates.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+                        LEADER STEEL is first-class agent of TISCO, JISCO, ZPSS, BAOSTEEL, ESS, LISCO, ANSTEEL, which is in charging of sales in east market of China.<br/>
+                        All of our products comply with international quality standards and are greatly appreciated in a variety of different markets throughout the world.<br/>
+                        After 20 years of development,the company has more than 1000 employees,with headquarters and production base in Shanghai,Wuxi,Dainan,Foshan,Wenzhou,<br/>Tianjin Industrial Park.
+                    </p></div>
             </div>
             <!--<div class="left_bottom" style="margin-top: -17px;">
                 <a class="ViewDetail" href="about.php" title="ABOUT US"><h2>DETAILS</h2></a>
@@ -23,8 +27,8 @@ include_once '../php/header.php';
             <div class="left_title1">
                 <h2><a href="product.php" target="_blank" title="产品中心">PRODUCTS</a></h2>
             </div>
-            <div class="left_body1">
-                <ul class="gridlist2"><!--循环开始-->
+            <div class="left_body1" style="width: 1000px;">
+                <ul class="gridlist2">
                     <li class="li1"><a class="img" href="http://0133.wangzhan31.com/snzm.html" title="室内照明" target="_blank"><img
                                 src="../resources/images/index/4.jpg" title="室内照明" alt="室内照明"></a><a class="ChannelName"
                                                                                                      href="http://0133.wangzhan31.com/snzm.html"
@@ -45,27 +49,22 @@ include_once '../php/header.php';
                                                                                                      href="http://0133.wangzhan31.com/hwzm.html"
                                                                                                      title="户外照明" target="_blank">户外照明</a>
                     </li>
-                    <li class="li5"><a class="img" href="http://0133.wangzhan31.com/zycp.html" title="专业产品" target="_blank"><img
-                                src="../resources/images/index/1(1).jpg" title="专业产品" alt="专业产品"></a><a class="ChannelName"
-                                                                                                        href="http://0133.wangzhan31.com/zycp.html"
-                                                                                                        title="专业产品" target="_blank">专业产品</a>
+                    <li class="li4"><a class="img" href="http://0133.wangzhan31.com/hwzm.html" title="户外照明" target="_blank"><img
+                                src="../resources/images/index/6.jpg" title="户外照明" alt="户外照明"></a><a class="ChannelName"
+                                                                                                     href="http://0133.wangzhan31.com/hwzm.html"
+                                                                                                     title="户外照明" target="_blank">户外照明</a>
                     </li>
-                    <li class="li6"><a class="img" href="http://0133.wangzhan31.com/jcdd.html" title="集成吊顶" target="_blank"><img
-                                src="../resources/images/index/5.jpg" title="集成吊顶" alt="集成吊顶"></a><a class="ChannelName"
-                                                                                                     href="http://0133.wangzhan31.com/jcdd.html"
-                                                                                                     title="集成吊顶" target="_blank">集成吊顶</a>
-                    </li><!--循环结束--></ul>
+                </ul>
             </div>
-            <!--<div class="left_bottom1"><a class="ChannelName" href="product.php"
-                                         title="产品中心"></a></div>-->
         </div>
     </div>
     <div id="floor_3_main">
         <div id="floor_3">
             <div id="floor_3_1">
-                <div class="left_title2"><h2><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">公司新闻</a>
-                    </h2><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻"><img src="../resources/images/index/1(2).jpg"
-                                                                                                 title="公司新闻"></a></div>
+                <div class="left_title2">
+                    <h2><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">公司新闻</a></h2>
+<!--                    <a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻"> <img src="../resources/images/index/1(2).jpg" title="公司新闻"></a>-->
+                </div>
                 <div class="left_body2">
                     <ul class="textlist1">
                         <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">[公司新闻]</a></span><a
@@ -89,13 +88,15 @@ include_once '../php/header.php';
                         </li>
                     </ul>
                 </div>
-                <div class="left_bottom2"><a class="more" href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">更多..</a>
-                </div>
+                <!--<div class="left_bottom2">
+                    <a class="more" href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">更多..</a>
+                </div>-->
             </div>
             <div id="floor_3_2">
-                <div class="left_title2"><h2><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">行业动态</a>
-                    </h2><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态"><img src="../resources/images/index/2(2).jpg"
-                                                                                                    title="行业动态"></a></div>
+                <div class="left_title2">
+                    <h2><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">行业动态</a></h2>
+<!--                    <a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态"><img src="../resources/images/index/2(2).jpg" title="行业动态"></a>-->
+                </div>
                 <div class="left_body2">
                     <ul class="textlist1">
                         <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">[行业动态]</a></span><a
@@ -119,8 +120,8 @@ include_once '../php/header.php';
                                 title="灯具安装的注意事项">灯具安装的注意事项</a><span class="Time">2015-09-24</span></li>
                     </ul>
                 </div>
-                <div class="left_bottom2"><a class="more" href="http://0133.wangzhan31.com/industrytrends.html"
-                                             title="行业动态">更多..</a></div>
+                <!--<div class="left_bottom2"><a class="more" href="http://0133.wangzhan31.com/industrytrends.html"
+                                             title="行业动态">更多..</a></div>-->
             </div>
         </div>
     </div>
