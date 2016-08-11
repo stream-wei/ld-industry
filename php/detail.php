@@ -157,43 +157,6 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
                         </div>
                     </div>
                 </div>
-                <div class="inqu_read"><a id="inquiry"></a>
-                    <div class="formtitle"><strong>Online Inquiry</strong>
-                        <p>Please feel free to give your inquiry in the form below.We will reply you in 24 hours.</p>
-                    </div>
-                    <div class="inquirShow">
-                        <form method="post" action="http://www.sakysteel.com/index.php?ac=form&amp;at=save" id="contact"
-                              name="contact" class="contact-iqr">
-                            <input type="hidden" value="sakysteel@126.com" name="targetemail">
-                            <input type="hidden" name="linkurl" value="add">
-                            <input type="hidden" name="fgid" id="fgid" value="1">
-                            <input type="hidden" name="formcode" id="formcode" value="contact">
-                            <input type="hidden" name="did" id="did" value="53">
-                            <input type="hidden" name="Title" id="Title" value="stainless steel round bar">
-                            <ul class="clearfix">
-                                <li class="half">
-                                    <p>
-                                        <input type="text" name="Email" value="Email*"
-                                               onfocus="if(value==&#39;Email*&#39;){value=&#39;&#39;}"
-                                               onblur="if(value==&#39;&#39;){value=&#39;Email*&#39;}">
-                                    </p>
-                                </li>
-                                <li class="clearfix"></li>
-                                <li class="mess">
-                                    <p>
-                                        <textarea name="Message" class="txtMess" value=""
-                                                  onfocus="if(value==&#39;Message*&#39;){value=&#39;&#39;}"
-                                                  onblur="if(value==&#39;&#39;){value=&#39;Message*&#39;}">Message*</textarea>
-                                    </p>
-                                </li>
-                                <li class="btnWrap">
-                                    <input class="btn focusOn" type="submit" value="Submit">
-                                    <input class="btn focusOn" type="reset" value="Refill">
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
-                </div>
 
             </div>
             <!--左边结束-->
