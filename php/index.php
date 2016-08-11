@@ -4,10 +4,10 @@ include_once '../php/header.php';
     <div id="floor_1_main">
         <div id="floor_1">
             <div class="left_title">
-                <h2 class="h2_2"><a href="about.php" title="ABOUT US">ABOUT US</a></h2></div>
+                <h2 class="h2_2"><a href="about.html" title="ABOUT US">ABOUT US</a></h2></div>
             <div class="left_body">
                 <div class="ChannelSContent1">
-                    <a href="about.php" title="ABOUT US"><!--<img src="../resources/images/index/c1.jpg" alt="关于我们">--></a>
+                    <a href="about.html" title="ABOUT US"></a>
                     <p>
                         LEADER STEEL(sub-company of LEADER WATER INDUSTRY CO.,LTD) established in 1996, located in Shanghai, China.&nbsp;&nbsp;<br/>
                         LEADER STEEL is a manufacturer specialized in production Stainless Steel Bars, Pipes, Wires, Coils, Sheets and Plates.
@@ -17,42 +17,38 @@ include_once '../php/header.php';
                         After 20 years of development,the company has more than 1000 employees,with headquarters and production base in Shanghai,Wuxi,Dainan,Foshan,Wenzhou,<br/>Tianjin Industrial Park.
                     </p></div>
             </div>
-            <!--<div class="left_bottom" style="margin-top: -17px;">
-                <a class="ViewDetail" href="about.php" title="ABOUT US"><h2>DETAILS</h2></a>
-            </div>-->
         </div>
     </div>
     <div id="floor_2_main" style="margin-top: -40px;">
         <div id="floor_2">
             <div class="left_title1">
-                <h2><a href="product.php" target="_blank" title="产品中心">PRODUCTS</a></h2>
+                <h2><a href="products.html" target="_blank" title="PRODUCTS">PRODUCTS</a></h2>
             </div>
             <div class="left_body1" style="width: 1000px;">
                 <ul class="gridlist2">
-                    <li class="li1"><a class="img" href="http://0133.wangzhan31.com/snzm.html" title="室内照明" target="_blank"><img
-                                src="../resources/images/index/4.jpg" title="室内照明" alt="室内照明"></a><a class="ChannelName"
-                                                                                                     href="http://0133.wangzhan31.com/snzm.html"
-                                                                                                     title="室内照明" target="_blank">室内照明</a>
+                    <li class="li1">
+                        <a class="img" href="" title="Stainless steel Angle bar" target="_blank">
+                            <img src="/upload/Stainless steel bar/Stainless steel Angle bar/AB-1.jpg" title="Stainless steel Angle bar" alt="Stainless steel Angle bar" />
+                        </a>
+                        <a class="ChannelName" href="" title="Stainless steel Angle bar" target="_blank">Stainless steel Angle bar</a>
                     </li>
-                    <li class="li2"><a class="img" href="http://0133.wangzhan31.com/dgcp.html" title="电工产品" target="_blank"><img
-                                src="../resources/images/index/2(1).jpg" title="电工产品" alt="电工产品"></a><a class="ChannelName"
-                                                                                                        href="http://0133.wangzhan31.com/dgcp.html"
-                                                                                                        title="电工产品" target="_blank">电工产品</a>
+                    <li class="li1">
+                        <a class="img" href="" title="Stainess steel strip" target="_blank">
+                            <img src="/upload/Stainless steel coil&sheet/Stainess steel strip/STRIP-1.jpg" title="Stainess steel strip" alt="Stainess steel strip" />
+                        </a>
+                        <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="Stainess steel strip" target="_blank">Stainess steel strip</a>
                     </li>
-                    <li class="li3"><a class="img" href="http://0133.wangzhan31.com/gyzm.html" title="光源照明" target="_blank"><img
-                                src="../resources/images/index/3.jpg" title="光源照明" alt="光源照明"></a><a class="ChannelName"
-                                                                                                     href="http://0133.wangzhan31.com/gyzm.html"
-                                                                                                     title="光源照明" target="_blank">光源照明</a>
+                    <li class="li1">
+                        <a class="img" href="" title="Stainless steel coil tube" target="_blank">
+                            <img src="/upload/Stainless steel pipe/Stainless steel coil tube/SP-10.jpg" title="Stainless steel coil tube" alt="Stainless steel coil tube" />
+                        </a>
+                        <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="Stainless steel coil tube" target="_blank">Stainless steel coil tube</a>
                     </li>
-                    <li class="li4"><a class="img" href="http://0133.wangzhan31.com/hwzm.html" title="户外照明" target="_blank"><img
-                                src="../resources/images/index/6.jpg" title="户外照明" alt="户外照明"></a><a class="ChannelName"
-                                                                                                     href="http://0133.wangzhan31.com/hwzm.html"
-                                                                                                     title="户外照明" target="_blank">户外照明</a>
-                    </li>
-                    <li class="li4"><a class="img" href="http://0133.wangzhan31.com/hwzm.html" title="户外照明" target="_blank"><img
-                                src="../resources/images/index/6.jpg" title="户外照明" alt="户外照明"></a><a class="ChannelName"
-                                                                                                     href="http://0133.wangzhan31.com/hwzm.html"
-                                                                                                     title="户外照明" target="_blank">户外照明</a>
+                    <li class="li1">
+                        <a class="img" href="" title="stainless steel coil rod" target="_blank">
+                            <img src="/upload/Stainless steel wire/stainless steel coil rod/PY-1.jpg" title="stainless steel coil rod" alt="stainless steel coil rod" />
+                        </a>
+                        <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="stainless steel coil rod" target="_blank">stainless steel coil rod</a>
                     </li>
                 </ul>
             </div>
@@ -62,8 +58,7 @@ include_once '../php/header.php';
         <div id="floor_3">
             <div id="floor_3_1">
                 <div class="left_title2">
-                    <h2><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">公司新闻</a></h2>
-<!--                    <a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻"> <img src="../resources/images/index/1(2).jpg" title="公司新闻"></a>-->
+                    <h2><a href="http://0133.wangzhan31.com/companynews.html" title="news">NEWS</a></h2>
                 </div>
                 <div class="left_body2">
                     <ul class="textlist1">
