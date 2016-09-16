@@ -6,33 +6,26 @@
             <dl>
                 <dt>Product</dt>
                 <dd>
-                    <li><a href="http://www.haosteelgroup.com/products.asp?/1.html">Stainless steel bar</a></li>
-                    <li><a href="http://www.haosteelgroup.com/products.asp?/2.html">Stainless steel pipe</a></li>
-                    <li><a href="http://www.haosteelgroup.com/products.asp?/3.html">Stainless steel sheet</a></li>
-                    <li><a href="http://www.haosteelgroup.com/products.asp?/4.html">Stainless steel wire</a></li>
+                    <li><a href="products.php?currPage=1&pId=1">Stainless steel bar</a></li>
+                    <li><a href="products.php?currPage=1&pId=11">Stainless steel coil&sheet</a></li>
+                    <li><a href="products.php?currPage=1&pId=17">Stainless steel pipe</a></li>
+                    <li><a href="products.php?currPage=1&pId=25">Stainless steel wire</a></li>
                 </dd>
             </dl>
             <dl>
                 <dt>About</dt>
                 <dd>
-                    <li><a href="http://www.haosteelgroup.com/information.asp?/1a1.html">About us</a></li>
-                    <li><a href="http://www.haosteelgroup.com/information.asp?/2a1.html">Certificate</a></li>
-                    <li><a href="http://www.haosteelgroup.com/information.asp?/3a1.html">Team Workers</a></li>
+                    <li><a href="about.php">About us</a></li>
+                    <li><a href="certificates.php">Certificate</a></li>
+                    <li><a href="team.php">Team Workers</a></li>
                 </dd>
             </dl>
             <dl>
                 <dt>Service</dt>
                 <dd>
-                    <li><a href="http://www.haosteelgroup.com/information.asp?/4a2.html">Process Flow</a></li>
-                    <li><a href="http://www.haosteelgroup.com/information.asp?/5a2.html">Packing</a></li>
-                    <li><a href="http://www.haosteelgroup.com/information.asp?/6a2.html">FAQS</a></li>
-                </dd>
-            </dl>
-            <dl>
-                <dt>Culture</dt>
-                <dd>
-                    <li><a href="http://www.haosteelgroup.com/information.asp?/7a3.html">Principle</a></li>
-                    <li><a href="http://www.haosteelgroup.com/information.asp?/8a3.html">Philosophy</a></li>
+                    <li><a href="service.php">Process Flow</a></li>
+                    <li><a href="service.php">Packing</a></li>
+                    <li><a href="service.php">FAQS</a></li>
                 </dd>
             </dl>
         </div>
@@ -41,17 +34,17 @@
             <dl>
                 <dt>FIND US SOCIAL MEDIA</dt>
                 <dd class="clearfix">
-                    <a href="http://www.haosteelgroup.com/#"><img src="../resources/images/footer/icon1.png"></a>
-                    <a href="http://www.haosteelgroup.com/#"><img src="../resources/images/footer/icon2.png"></a>
-                    <a href="http://www.haosteelgroup.com/#"><img src="../resources/images/footer/icon3.png"></a>
-                    <a href="http://www.haosteelgroup.com/#"><img src="../resources/images/footer/icon4.png"></a>
-                    <a href="http://www.haosteelgroup.com/#"><img src="../resources/images/footer/icon5.png"></a>
-                    <a href="http://www.haosteelgroup.com/#"><img src="../resources/images/footer/icon6.png"></a></dd>
+                    <a href="#"><img src="../resources/images/footer/icon1.png"></a>
+                    <a href="#"><img src="../resources/images/footer/icon3.png"></a>
+                    <a href="#"><img src="../resources/images/footer/icon2.png"></a>
+                    <a href="#"><img src="../resources/images/footer/icon4.png"></a>
+                    <a href="#"><img src="../resources/images/footer/icon5.png"></a>
+                    <a href="#"><img src="../resources/images/footer/icon6.png"></a></dd>
             </dl>
         </div>
         <div class="clearboth"></div>
-        <div class="f-copy">Copyright © Haosteel Group Co., Limited All Rights Reserved.
-            <a href="http://www.haosteelgroup.com/sitemap.asp">Sitemap</a></div>
+        <div class="f-copy">Copyright © LeaderSteel Group Co., Limited All Rights Reserved.
+            <a href="#">Sitemap</a></div>
     </div>
 </div><!--返回顶部start-->
 <script type="text/javascript" src="../resources/js/global/scroll.js"></script>

@@ -15,12 +15,16 @@ include_once 'header_s.php';
                 <div class="sub_right_tit">Certificates</div>
                 <div class="case_read">
                     <p>
-                        <img src="../resources/images/certificates/cer1.jpg" alt="" width="233" height="283"> &nbsp;&nbsp;
-                        <img src="../resources/images/certificates/cer2.jpg" alt="" width="210" height="283"> &nbsp;&nbsp;&nbsp;
-                        <img src="../resources/images/certificates/cer3.jpg" alt="" width="200" height="283">
+                        <img src="../resources/images/team/ACCOUNDANT%20DEPARTMENT.jpg" alt="" /> &nbsp;&nbsp;
                     </p>
                     <p>
-                        <img src="../resources/images/certificates/cer4.jpg" alt="" width="221" height="310"> &nbsp;
+                        <img src="../resources/images/team/CNPC.jpg" alt=""/>
+                    </p>
+                    <p>
+                        <img src="../resources/images/team/EXPORT%20DEPARTMENT.jpg" alt="" />
+                    </p>
+                    <p>
+                        <img src="../resources/images/team/PROCESS%20DEPARTMENT.jpg" alt="" />
                     </p>
                 </div>
             </div>
@@ -30,8 +34,8 @@ include_once 'header_s.php';
                 <div class="sideLeft">
                     <h3>About Us</h3>
                     <ul>
-                        <li><a href="#">Certificates</a></li>
-                        <li><a href="team.php">Team</a></li>
+                        <li><a href="certificates.php">Certificates</a></li>
+                        <li><a href="#">Team</a></li>
 
                     </ul>
                 </div>

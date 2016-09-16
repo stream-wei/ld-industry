@@ -16,7 +16,7 @@
         <div id="logo"><!--网站Logo 开始-->
             <div class="WebLogo">
                 <a href="#" target="_self">
-                    <img style="margin-top: 10px;" src="../resources/images/global/logo.png" title="某某公司" alt="某某公司">
+                    <img style="margin-top: 10px;" src="../resources/images/global/logo.png" title="leader steel" alt="leader steel">
                 </a>
             </div><!--网站Logo 结束--></div>
         <div id="top_2">
@@ -44,8 +44,9 @@
 <div id="banner_main"><!--幻灯片 开始-->
     <div id="banner">
         <ul class="bannerlist">
-            <li><img style="width: 100%;" src="../resources/images/global/index_1.jpg"></li>
-            <li><img style="width: 100%;" src="../resources/images/global/index_2.jpg"></li>
+            <li><img style="width: 100%;height: 100%;" src="../resources/images/global/banner1.jpg"></li>
+            <li><img style="width: 100%;height: 100%;" src="../resources/images/global/banner2.jpg"></li>
+            <li><img style="width: 100%;height: 100%;" src="../resources/images/global/banner3.jpg"></li>
         </ul>
     </div>
     <div class="hd">

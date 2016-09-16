@@ -32,19 +32,25 @@ include_once '../php/header.php';
                         </a>
                         <a class="ChannelName" href="" title="Stainless steel Angle bar" target="_blank">Stainless steel Angle bar</a>
                     </li>
-                    <li class="li1">
+                    <li class="li2">
                         <a class="img" href="" title="Stainess steel strip" target="_blank">
                             <img src="/upload/Stainless steel coil&sheet/Stainess steel strip/STRIP-1.jpg" title="Stainess steel strip" alt="Stainess steel strip" />
                         </a>
                         <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="Stainess steel strip" target="_blank">Stainess steel strip</a>
                     </li>
-                    <li class="li1">
+                    <li class="li3">
                         <a class="img" href="" title="Stainless steel coil tube" target="_blank">
                             <img src="/upload/Stainless steel pipe/Stainless steel coil tube/SP-10.jpg" title="Stainless steel coil tube" alt="Stainless steel coil tube" />
                         </a>
                         <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="Stainless steel coil tube" target="_blank">Stainless steel coil tube</a>
                     </li>
-                    <li class="li1">
+                    <li class="li4">
+                        <a class="img" href="" title="stainless steel coil rod" target="_blank">
+                            <img src="/upload/Stainless steel wire/stainless steel coil rod/PY-1.jpg" title="stainless steel coil rod" alt="stainless steel coil rod" />
+                        </a>
+                        <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="stainless steel coil rod" target="_blank">stainless steel coil rod</a>
+                    </li>
+                    <li class="li5">
                         <a class="img" href="" title="stainless steel coil rod" target="_blank">
                             <img src="/upload/Stainless steel wire/stainless steel coil rod/PY-1.jpg" title="stainless steel coil rod" alt="stainless steel coil rod" />
                         </a>
@@ -58,65 +64,39 @@ include_once '../php/header.php';
         <div id="floor_3">
             <div id="floor_3_1">
                 <div class="left_title2">
-                    <h2><a href="http://0133.wangzhan31.com/companynews.html" title="news">NEWS</a></h2>
+                    <h2><a href="#" title="news">NEWS</a></h2>
                 </div>
                 <div class="left_body2">
                     <ul class="textlist1">
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">[公司新闻]</a></span><a
+                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
                                 class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/187.html" target="_blank"
                                 title="普通照明增加 LED市场未来将获大发展">普通照明增加 LED市场未来将获大发展</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">[公司新闻]</a></span><a
+                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
                                 class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/186.html" target="_blank"
                                 title="LED显示屏行业竞争现状分析">LED显示屏行业竞争现状分析</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">[公司新闻]</a></span><a
+                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
                                 class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/185.html" target="_blank"
                                 title="居然之家涉足灯饰专业卖场">居然之家涉足灯饰专业卖场</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">[公司新闻]</a></span><a
+                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
                                 class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/184.html" target="_blank"
                                 title="LED灯具市场仍需整治">LED灯具市场仍需整治</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">[公司新闻]</a></span><a
+                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
                                 class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/177.html" target="_blank"
                                 title="灯饰选择六原则教您如何选好灯">灯饰选择六原则教您如何选好灯</a><span class="Time">2015-09-24</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">[公司新闻]</a></span><a
+                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
                                 class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/176.html" target="_blank"
                                 title="八大问题“诠释”LED照明跨境电商“百态”">八大问题“诠释”LED照明跨境电商“百态”</a><span class="Time">2015-09-24</span>
                         </li>
                     </ul>
                 </div>
                 <!--<div class="left_bottom2">
-                    <a class="more" href="http://0133.wangzhan31.com/companynews.html" title="公司新闻">更多..</a>
+                    <a class="more" href="#" title="公司新闻">更多..</a>
                 </div>-->
             </div>
             <div id="floor_3_2">
                 <div class="left_title2">
-                    <h2><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">行业动态</a></h2>
-<!--                    <a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态"><img src="../resources/images/index/2(2).jpg" title="行业动态"></a>-->
+                    <img src="../resources/images/index/index-team.jpg" />
                 </div>
-                <div class="left_body2">
-                    <ul class="textlist1">
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">[行业动态]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/industrytrends/191.html" target="_blank"
-                                title="电子行业:下半年LED照明启动,龙头公司受益">电子行业:下半年LED照明启动,龙头公司受益</a><span
-                                class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">[行业动态]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/industrytrends/190.html" target="_blank"
-                                title="前景诱人 智能照明打造新增长点">前景诱人 智能照明打造新增长点</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">[行业动态]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/industrytrends/189.html" target="_blank"
-                                title="2013年国内灯具市场：尽吹复古风？">2013年国内灯具市场：尽吹复古风？</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">[行业动态]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/industrytrends/188.html" target="_blank"
-                                title="价格战如火如荼 LED球泡销量爆发">价格战如火如荼 LED球泡销量爆发</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">[行业动态]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/industrytrends/183.html" target="_blank"
-                                title="选购既节能又能装饰的灯具">选购既节能又能装饰的灯具</a><span class="Time">2015-09-24</span></li>
-                        <li><span class="ChannelName"><a href="http://0133.wangzhan31.com/industrytrends.html" title="行业动态">[行业动态]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/industrytrends/182.html" target="_blank"
-                                title="灯具安装的注意事项">灯具安装的注意事项</a><span class="Time">2015-09-24</span></li>
-                    </ul>
-                </div>
-                <!--<div class="left_bottom2"><a class="more" href="http://0133.wangzhan31.com/industrytrends.html"
-                                             title="行业动态">更多..</a></div>-->
             </div>
         </div>
     </div>
@@ -129,37 +109,56 @@ include_once '../php/header.php';
                     <div class="bd">
                         <div id="footer-slider">
                             <ul class="gridlist"><!--循环开始-->
-                                <li><a href="http://0133.wangzhan31.com/tyfg/166.html" target="_blank"><img
-                                            src="../resources/images/index/22.jpg" title="田园5" alt="田园5"></a><a class="InfoSTitle"
-                                                                                                                href="http://0133.wangzhan31.com/tyfg/166.html"
-                                                                                                                target="_blank" title="田园5">田园5</a>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/angang.jpg" title="ANSTEEL" alt="ANSTEEL">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="ANSTEEL">ANSTEEL</a>
                                 </li>
-                                <li><a href="http://0133.wangzhan31.com/tyfg/165.html" target="_blank"><img
-                                            src="../resources/images/index/21.jpg" title="田园4" alt="田园4"></a><a class="InfoSTitle"
-                                                                                                                href="http://0133.wangzhan31.com/tyfg/165.html"
-                                                                                                                target="_blank" title="田园4">田园4</a>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/BAOSTEEL.jpg" title="BAOSTEEL" alt="BAOSTEEL">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="BAOSTEEL">BAOSTEEL</a>
                                 </li>
-                                <li><a href="http://0133.wangzhan31.com/tyfg/164.html" target="_blank"><img
-                                            src="../resources/images/index/25.jpg" title="田园3" alt="田园3"></a><a class="InfoSTitle"
-                                                                                                                href="http://0133.wangzhan31.com/tyfg/164.html"
-                                                                                                                target="_blank" title="田园3">田园3</a>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/JISCO.jpg" title="JISCO" alt="JISCO">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="JISCO">JISCO</a>
                                 </li>
-                                <li><a href="http://0133.wangzhan31.com/tyfg/163.html" target="_blank"><img
-                                            src="../resources/images/index/24.jpg" title="田园2" alt="田园2"></a><a class="InfoSTitle"
-                                                                                                                href="http://0133.wangzhan31.com/tyfg/163.html"
-                                                                                                                target="_blank" title="田园2">田园2</a>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/tisco.jpg" title="TISCO" alt="TISCO">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="TISCO">TISCO</a>
                                 </li>
-                                <li><a href="http://0133.wangzhan31.com/tyfg/162.html" target="_blank"><img
-                                            src="../resources/images/index/23.jpg" title="田园1" alt="田园1"></a><a class="InfoSTitle"
-                                                                                                                href="http://0133.wangzhan31.com/tyfg/162.html"
-                                                                                                                target="_blank" title="田园1">田园1</a>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/CSSC.jpg" title="CSSC" alt="CSSC">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="CSSC">CSSC</a>
                                 </li>
-                                <li><a href="http://0133.wangzhan31.com/tyfg/162.html" target="_blank"><img
-                                            src="../resources/images/index/23.jpg" title="田园1" alt="田园1"></a><a class="InfoSTitle"
-                                                                                                                href="http://0133.wangzhan31.com/tyfg/162.html"
-                                                                                                                target="_blank" title="田园1">田园1</a>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/DAEWOO.jpg" title="DAEWOO" alt="DAEWOO">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="DAEWOO">DAEWOO</a>
                                 </li>
-
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/HBIS.jpg" title="HBIS" alt="HBIS">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="HBIS">HBIS</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/HYUNDAI.jpg" title="HYUNDAI" alt="HYUNDAI">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="HYUNDAI">HYUNDAI</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/TPCO.jpg" title="TPCO" alt="TPCO">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="TPCO">TPCO</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="/upload/partner/XINXING.png" title="XINXING" alt="XINXING">
+                                    </a><a class="InfoSTitle" href="#" target="_blank" title="BAOSTEEL">XINXING</a>
+                                </li>
                                 <!--循环结束--></ul>
                         </div>
                     </div>

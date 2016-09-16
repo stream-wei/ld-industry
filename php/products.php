@@ -20,7 +20,7 @@ if (isset($_GET['cId'])) {
     $cId = null;
 }
 $pageSize = 9;
-$mysqli = new mysqli('stream.gotoftp1.com', 'stream', '3183371911', 'stream');
+    $mysqli = new mysqli('stream.gotoftp1.com', 'stream', '3183371911', 'stream');
 if (mysqli_connect_errno()) {
     printf("连接失败:%s\n", mysqli_connect_error());
     exit();
@@ -156,12 +156,11 @@ $total = $countResult->fetch_row()[0];
                 <div class="contactSide">
                     <h3>Contact Us</h3>
                     <ul>
-                        <li>Contacts: Saky Steel</li>
-                        <li><a href="mailto:sales@sakysteel.com">sales@sakysteel.com</a></li>
-                        <li><a href="skype:saky.steel?chat">Skype: saky.steel</a></li>
-                        <li>Tel: 0086-21 60446500;60446511</li>
-                        <li>Fax: 0086-21 51026334</li>
-                        <li>Address: A205 No.588 ZhuYuan Road,Shanghai,China 201112</li>
+                        <li>Contacts: Leader Steel</li>
+                        <li><a href="mailto:leadersteelsh@gmail.com">leadersteelsh@gmail.com</a></li>
+                        <li><a href="skype:leadersteelsh?chat">Skype: leadersteelsh</a></li>
+                        <li>Tel: 0086-21 33323999</li>
+                        <li>Fax: 0086-21 33323998</li>
                     </ul>
                 </div>
             </div>

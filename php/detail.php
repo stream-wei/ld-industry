@@ -120,25 +120,8 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
                                 <li>
                                     <div><?php echo $description?></div>
                                 </li>
-                                <li><a href="http://www.sakysteel.com/stainless-steel-round-bar-53.html#inquiry"
-                                       class="conNow">Contact Now</a></li>
-                                <li><!-- Go to www.addthis.com/dashboard to generate a new set of sharing buttons -->
-                                   <!-- <a href="https://api.addthis.com/oexchange/0.8/forward/pinterest/offer?url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
-                                       target="_blank"><img src="./detail_files/pinterest.png" border="0"
-                                                            alt="Pinterest"></a>
-                                    <a href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
-                                       target="_blank"><img src="./detail_files/linkedin.png" border="0" alt="LinkedIn"></a>
-                                    <a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
-                                       target="_blank"><img src="./detail_files/google_plusone_share.png" border="0"
-                                                            alt="Google+"></a>
-                                    <a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
-                                       target="_blank"><img src="./detail_files/facebook.png" border="0" alt="Facebook"></a>
-                                    <a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
-                                       target="_blank"><img src="./detail_files/twitter.png" border="0"
-                                                            alt="Twitter"></a>
-                                    <a href="https://www.addthis.com/bookmark.php?source=tbx32nj-1.0&amp;v=300&amp;url=http%3A%2F%2Fsakysteel.com&amp;pubid=ra-5502a49f0c924bd2&amp;ct=1&amp;pco=tbxnj-1.0"
-                                       target="_blank"><img src="./detail_files/addthis.png" border="0"
-                                                            alt="Addthis"></a>-->
+<!--                                <li><a href="#" class="conNow">Contact Now</a></li>-->
+                                <li>
                                 </li>
                             </ul>
                         </div>
@@ -193,12 +176,11 @@ while (list($productIdTemp,$descriptionTemp,$detailTemp,$titleTemp,$categoryName
                 <div class="contactSide">
                     <h3>Contact Us</h3>
                     <ul>
-                        <li>Contacts: Saky Steel</li>
-                        <li><a href="mailto:sales@sakysteel.com">sales@sakysteel.com</a></li>
-                        <li><a href="skype:saky.steel?chat">Skype: saky.steel</a></li>
-                        <li>Tel: 0086-21 60446500;60446511</li>
-                        <li>Fax: 0086-21 51026334</li>
-                        <li>Address: A205 No.588 ZhuYuan Road,Shanghai,China 201112</li>
+                        <li>Contacts: Leader Steel</li>
+                        <li><a href="mailto:leadersteelsh@gmail.com">leadersteelsh@gmail.com</a></li>
+                        <li><a href="skype:leadersteelsh?chat">Skype: leadersteelsh</a></li>
+                        <li>Tel: 0086-21 33323999</li>
+                        <li>Fax: 0086-21 33323998</li>
                     </ul>
                 </div>
             </div>
