@@ -494,18 +494,18 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #floor_3_1 {
     float: left;
-    width: 450px;
+    width: 330px;
 }
 
 #floor_3_2 {
     float: right;
-    width: 450px;
+    width: 570px;
 }
 
 #floor_4_main {
     margin-top: -50px;
     background: url(../../images/index/floor_4_main.jpg) no-repeat top center;
-    height: 408px;
+    /*height: 408px;*/
 }
 
 #floor_4 {
@@ -2129,7 +2129,7 @@ table.feedback_table .operation {
 
 .gridlist li img {
     border: 1px solid #DCDCDC;
-    width: 223px;
+    width: 175px;
 }
 
 .gridlist li a {
