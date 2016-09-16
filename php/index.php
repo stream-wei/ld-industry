@@ -4,10 +4,10 @@ include_once '../php/header.php';
     <div id="floor_1_main">
         <div id="floor_1">
             <div class="left_title">
-                <h2 class="h2_2"><a href="about.html" title="ABOUT US">ABOUT US</a></h2></div>
+                <h2 class="h2_2"><a href="about.php" title="ABOUT US">ABOUT US</a></h2></div>
             <div class="left_body">
                 <div class="ChannelSContent1">
-                    <a href="about.html" title="ABOUT US"></a>
+                    <a href="about.php" title="ABOUT US"></a>
                     <p>
                         LEADER STEEL(sub-company of LEADER WATER INDUSTRY CO.,LTD) established in 1996, located in Shanghai, China.&nbsp;&nbsp;<br/>
                         LEADER STEEL is a manufacturer specialized in production Stainless Steel Bars, Pipes, Wires, Coils, Sheets and Plates.
@@ -22,7 +22,7 @@ include_once '../php/header.php';
     <div id="floor_2_main" style="margin-top: -40px;">
         <div id="floor_2">
             <div class="left_title1">
-                <h2><a href="products.html" target="_blank" title="PRODUCTS">PRODUCTS</a></h2>
+                <h2><a href="products.php" target="_blank" title="PRODUCTS">PRODUCTS</a></h2>
             </div>
             <div class="left_body1" style="width: 1000px;">
                 <ul class="gridlist2">
@@ -36,25 +36,25 @@ include_once '../php/header.php';
                         <a class="img" href="" title="Stainess steel strip" target="_blank">
                             <img src="/upload/Stainless steel coil&sheet/Stainess steel strip/STRIP-1.jpg" title="Stainess steel strip" alt="Stainess steel strip" />
                         </a>
-                        <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="Stainess steel strip" target="_blank">Stainess steel strip</a>
+                        <a class="ChannelName" href="" title="Stainess steel strip" target="_blank">Stainess steel strip</a>
                     </li>
                     <li class="li3">
                         <a class="img" href="" title="Stainless steel coil tube" target="_blank">
                             <img src="/upload/Stainless steel pipe/Stainless steel coil tube/SP-10.jpg" title="Stainless steel coil tube" alt="Stainless steel coil tube" />
                         </a>
-                        <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="Stainless steel coil tube" target="_blank">Stainless steel coil tube</a>
+                        <a class="ChannelName" href="" title="Stainless steel coil tube" target="_blank">Stainless steel coil tube</a>
                     </li>
                     <li class="li4">
                         <a class="img" href="" title="stainless steel coil rod" target="_blank">
                             <img src="/upload/Stainless steel wire/stainless steel coil rod/PY-1.jpg" title="stainless steel coil rod" alt="stainless steel coil rod" />
                         </a>
-                        <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="stainless steel coil rod" target="_blank">stainless steel coil rod</a>
+                        <a class="ChannelName" href="" title="stainless steel coil rod" target="_blank">stainless steel coil rod</a>
                     </li>
                     <li class="li5">
                         <a class="img" href="" title="stainless steel coil rod" target="_blank">
                             <img src="/upload/Stainless steel wire/stainless steel coil rod/PY-1.jpg" title="stainless steel coil rod" alt="stainless steel coil rod" />
                         </a>
-                        <a class="ChannelName" href="http://0133.wangzhan31.com/snzm.html" title="stainless steel coil rod" target="_blank">stainless steel coil rod</a>
+                        <a class="ChannelName" href="" title="stainless steel coil rod" target="_blank">stainless steel coil rod</a>
                     </li>
                 </ul>
             </div>
@@ -68,29 +68,29 @@ include_once '../php/header.php';
                 </div>
                 <div class="left_body2">
                     <ul class="textlist1">
-                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/187.html" target="_blank"
-                                title="普通照明增加 LED市场未来将获大发展">普通照明增加 LED市场未来将获大发展</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/186.html" target="_blank"
-                                title="LED显示屏行业竞争现状分析">LED显示屏行业竞争现状分析</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/185.html" target="_blank"
-                                title="居然之家涉足灯饰专业卖场">居然之家涉足灯饰专业卖场</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/184.html" target="_blank"
-                                title="LED灯具市场仍需整治">LED灯具市场仍需整治</a><span class="Time">2015-09-25</span></li>
-                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/177.html" target="_blank"
-                                title="灯饰选择六原则教您如何选好灯">灯饰选择六原则教您如何选好灯</a><span class="Time">2015-09-24</span></li>
-                        <li><span class="ChannelName"><a href="#" title="公司新闻">[公司新闻]</a></span><a
-                                class="InfoSTitle" href="http://0133.wangzhan31.com/companynews/176.html" target="_blank"
-                                title="八大问题“诠释”LED照明跨境电商“百态”">八大问题“诠释”LED照明跨境电商“百态”</a><span class="Time">2015-09-24</span>
+                        <li><span class="ChannelName"><a href="#" title="News">[News]</a></span><a
+                                class="InfoSTitle" href="#" target="_blank"
+                                title="News">News1</a><span class="Time">2015-09-25</span></li>
+                        <li><span class="ChannelName"><a href="#" title="News">[News]</a></span><a
+                                class="InfoSTitle" href="#" target="_blank"
+                                title="News2">News2</a><span class="Time">2015-09-25</span></li>
+                        <li><span class="ChannelName"><a href="#" title="News">[News]</a></span><a
+                                class="InfoSTitle" href="#" target="_blank"
+                                title="News3">News3</a><span class="Time">2015-09-25</span></li>
+                        <li><span class="ChannelName"><a href="#" title="News">[News]</a></span><a
+                                class="InfoSTitle" href="#" target="_blank"
+                                title="News4">News4</a><span class="Time">2015-09-25</span></li>
+                        <li><span class="ChannelName"><a href="#" title="News">[News]</a></span><a
+                                class="InfoSTitle" href="#" target="_blank"
+                                title="News5">News5</a><span class="Time">2015-09-24</span></li>
+                        <li><span class="ChannelName"><a href="#" title="News">[News]</a></span><a
+                                class="InfoSTitle" href="#" target="_blank"
+                                title="News6">News6</a><span class="Time">2015-09-24</span>
                         </li>
                     </ul>
                 </div>
                 <!--<div class="left_bottom2">
-                    <a class="more" href="#" title="公司新闻">更多..</a>
+                    <a class="more" href="#" title="News">更多..</a>
                 </div>-->
             </div>
             <div id="floor_3_2">
@@ -102,8 +102,8 @@ include_once '../php/header.php';
     </div>
     <div id="floor_4_main">
         <div id="floor_4">
-            <div class="left_title4"><h2><a href="http://0133.wangzhan31.com/product.html" target="_blank"
-                                            title="产品中心">PARTNER</a></h2></div>
+            <div class="left_title4"><h2><a href="#" target="_blank"
+                                            title="PARTNER">PARTNER</a></h2></div>
             <div class="left_body4">
                 <div class="gridlist4">
                     <div class="bd">
@@ -174,8 +174,6 @@ include_once '../php/header.php';
                     });
                 </script>
             </div>
-            <!--<div class="left_bottom4"><a class="ChannelName" href="http://0133.wangzhan31.com/product.html"
-                                         title="产品中心"></a></div>-->
         </div>
     </div>
 <?php
